@@ -1,7 +1,12 @@
+using Cargo.Domain.Common;
+
 namespace Cargo.Domain;
 
-public class Cargo
+public class Cargo : IEntity
 {
+    /// <summary>
+    /// Auto generated ID
+    /// </summary>
     public Guid TrackingId { get; private set; }
 
     public Dictionary<Role, List<Customer>> Customers { get; private set; }
@@ -10,5 +15,3 @@ public class Cargo
 
     public DeliverySpecification Goal { get; private set; }
 }
-
-public record Role(string Name);
