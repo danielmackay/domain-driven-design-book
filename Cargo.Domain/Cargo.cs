@@ -14,4 +14,6 @@ public class Cargo : IEntity
     public DeliveryHistory DeliveryHistory { get; private set; }
 
     public DeliverySpecification Goal { get; private set; }
+
+    public List<HandlingEvent> HandlingEvents { get; private set; }
 }

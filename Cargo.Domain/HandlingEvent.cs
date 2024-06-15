@@ -20,5 +20,5 @@ public class HandlingEvent : IEntity
 
     public DeliveryHistory DeliveryHistory { get; private set; }
 
-    public CarrierMovement CarrierMovement { get; private set; }
+    public CarrierMovement? CarrierMovement { get; private set; }
 }
