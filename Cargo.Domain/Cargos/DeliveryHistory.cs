@@ -1,6 +1,6 @@
 using Cargo.Domain.Common;
 
-namespace Cargo.Domain;
+namespace Cargo.Domain.Cargos;
 
 public class DeliveryHistory : IEntity
 {

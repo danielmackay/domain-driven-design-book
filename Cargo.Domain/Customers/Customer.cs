@@ -1,8 +1,8 @@
 using Cargo.Domain.Common;
 
-namespace Cargo.Domain;
+namespace Cargo.Domain.Customers;
 
-public class Customer : IEntity
+public class Customer : IAggregateRoot
 {
     /// <summary>
     /// Provided from External System

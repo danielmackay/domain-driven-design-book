@@ -1,6 +1,6 @@
 namespace Cargo.Domain.Common;
 
-public interface IAggregateRoot;
+public interface IAggregateRoot : IEntity;
 
 public interface IEntity;
 

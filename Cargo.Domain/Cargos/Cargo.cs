@@ -1,8 +1,10 @@
 using Cargo.Domain.Common;
+using Cargo.Domain.Customers;
+using Cargo.Domain.HandlingEvents;
 
-namespace Cargo.Domain;
+namespace Cargo.Domain.Cargos;
 
-public class Cargo : IEntity
+public class Cargo : IAggregateRoot
 {
     /// <summary>
     /// Auto generated ID

@@ -1,6 +1,7 @@
 using Cargo.Domain.Common;
+using Cargo.Domain.Locations;
 
-namespace Cargo.Domain;
+namespace Cargo.Domain.Cargos;
 
 public class DeliverySpecification : IValueObject
 {

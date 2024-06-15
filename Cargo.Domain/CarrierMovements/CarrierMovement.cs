@@ -1,8 +1,9 @@
 using Cargo.Domain.Common;
+using Cargo.Domain.Locations;
 
-namespace Cargo.Domain;
+namespace Cargo.Domain.CarrierMovements;
 
-public class CarrierMovement : IEntity
+public class CarrierMovement : IAggregateRoot
 {
     /// <summary>
     /// Provided from External System

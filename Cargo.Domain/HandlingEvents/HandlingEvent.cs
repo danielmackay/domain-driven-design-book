@@ -1,8 +1,10 @@
+using Cargo.Domain.Cargos;
+using Cargo.Domain.CarrierMovements;
 using Cargo.Domain.Common;
 
-namespace Cargo.Domain;
+namespace Cargo.Domain.HandlingEvents;
 
-public class HandlingEvent : IEntity
+public class HandlingEvent : IAggregateRoot
 {
     /// <summary>
     /// Auto-Generated, but Handling Event can be uniquely identified by a combination of:
@@ -16,7 +18,7 @@ public class HandlingEvent : IEntity
 
     public string Type { get; private set; }
 
-    public Cargo Handled { get; private set; }
+    public Cargos.Cargo Handled { get; private set; }
 
     public DeliveryHistory DeliveryHistory { get; private set; }
 
