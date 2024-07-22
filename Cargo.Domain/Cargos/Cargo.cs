@@ -17,7 +17,6 @@ public class Cargo : IAggregateRoot
 
     public DeliverySpecification Goal { get; private set; }
 
-    public List<HandlingEvent> HandlingEvents { get; private set; }
 
     public Cargo(string id)
     {
