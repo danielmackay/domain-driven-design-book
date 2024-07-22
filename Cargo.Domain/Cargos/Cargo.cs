@@ -9,13 +9,20 @@ public class Cargo : IAggregateRoot
     /// <summary>
     /// Auto generated ID
     /// </summary>
-    public Guid TrackingId { get; private set; }
+    public string TrackingId { get; private set; }
 
-    public Dictionary<Role, List<Customer>> Customers { get; private set; }
+    public Dictionary<Role, List<Customer>> CustomerRoles { get; private set; }
 
     public DeliveryHistory DeliveryHistory { get; private set; }
 
     public DeliverySpecification Goal { get; private set; }
 
     public List<HandlingEvent> HandlingEvents { get; private set; }
+
+    public Cargo(string id)
+    {
+        TrackingId = id;
+        DeliveryHistory = new DeliveryHistory(this);
+        CustomerRoles = new Dictionary<Role, List<Customer>>();
+    }
 }
